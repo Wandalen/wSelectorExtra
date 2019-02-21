@@ -16,9 +16,7 @@ if( typeof module !== 'undefined' )
 
   let _ = require( '../../Tools.s' );
 
-  _.include( 'wLooker' );
-  _.include( 'wReplicator' );
-  _.include( 'wPathFundamentals' );
+  _.include( 'wSelector' );
 
 }
 
