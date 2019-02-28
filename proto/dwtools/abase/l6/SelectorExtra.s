@@ -179,7 +179,7 @@ function entityProbe( o )
       ({
         src : src[ s ],
         result : o.result,
-        assertingUniqueness : o.assertingUniqueness,
+        allowingCollision : o.allowingCollision,
       });
       else if( _.objectIs( src[ s ] ) )
       extend( o.result, src );
@@ -222,7 +222,7 @@ function entityProbe( o )
 
     o.all.push( src );
 
-    if( o.assertingUniqueness )
+    if( !o.allowingCollision )
     _.assertMapHasNone( result,src );
 
     for( let s in src )
