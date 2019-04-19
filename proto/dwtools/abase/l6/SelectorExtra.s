@@ -11,6 +11,12 @@
  * @file l6/SelectorExtra.s.
  */
 
+/**
+ *@summary Collection of routines to select a sub-structure from a complex data structure.
+  @namespace wTools(module:SelectorExtra)
+  @memberof module:Tools/base/SelectorExtra
+*/
+
 if( typeof module !== 'undefined' )
 {
 
@@ -71,6 +77,15 @@ _entityProbeReport.defaults =
 }
 
 //
+
+/**
+ * @summary Investigates sub-structures of source entity `o.src`.
+ * @param {Object} o Options map. See {@link module:Tools/base/Selector.wTools(module:Selector).select select} for options details.
+ * @param {Boolean} o.report=1 Supplements result with info about sub-structures.
+ * @param {String} o.title Title of report string. By default uses value of `o.selector`.
+ * @function entityProbeField
+ * @memberof module:Tools/base/SelectorExtra.wTools(module:SelectorExtra)
+*/
 
 function entityProbeField( o )
 {
@@ -142,6 +157,29 @@ entityProbeField.defaults.title = null;
 entityProbeField.defaults.report = 1;
 
 //
+
+/**
+ * @summary Investigates sub-structures of source entity `o.src`.
+ * @param {Object} o Options map
+ * @param {} o.src=null Source entity
+ * @param {Object} o.result=null Map with results of processing of each sub-strucrute.
+ * @param {Boolean} o.recursive=0 Enables recursive walkthrough
+ * @param {Boolean} o.report=1 Supplements result with info about sub-structures.
+ * @param {Number} o.total=0 Number of found sub-structures
+ * @param {Array} o.all=null Array with found sub-structures
+ * @param {String} o.title='Probe' Title of report string
+ * @example
+ *
+ * let src = { a : { b : 1 }, c : { d : 2 } };
+ * let r = _.entityProbe({ src : src, recursive : 1 });
+ * console.log( r.report )
+ * //Probe : 2
+ * //*.b : 1 [ Array with 1 elements ]
+ * //*.d : 1 [ Array with 1 elements ]
+ *
+ * @function entityProbe
+ * @memberof module:Tools/base/SelectorExtra.wTools(module:SelectorExtra)
+*/
 
 function entityProbe( o )
 {
