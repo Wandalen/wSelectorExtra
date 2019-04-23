@@ -13,7 +13,7 @@
 
 /**
  *@summary Collection of routines to select a sub-structure from a complex data structure.
-  @namespace wTools(module:SelectorExtra)
+  @namespace Tools( module::SelectorExtra )
   @memberof module:Tools/base/SelectorExtra
 */
 
@@ -84,7 +84,7 @@ _entityProbeReport.defaults =
  * @param {Boolean} o.report=1 Supplements result with info about sub-structures.
  * @param {String} o.title Title of report string. By default uses value of `o.selector`.
  * @function entityProbeField
- * @memberof module:Tools/base/SelectorExtra.wTools(module:SelectorExtra)
+ * @memberof module:Tools/base/SelectorExtra.Tools( module::SelectorExtra )
 */
 
 function entityProbeField( o )
@@ -178,7 +178,7 @@ entityProbeField.defaults.report = 1;
  * //*.d : 1 [ Array with 1 elements ]
  *
  * @function entityProbe
- * @memberof module:Tools/base/SelectorExtra.wTools(module:SelectorExtra)
+ * @memberof module:Tools/base/SelectorExtra.Tools( module::SelectorExtra )
 */
 
 function entityProbe( o )
