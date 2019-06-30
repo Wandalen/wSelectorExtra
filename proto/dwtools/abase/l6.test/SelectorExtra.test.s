@@ -26,12 +26,12 @@ function selectTrivial( test )
 
   var src = { a : [ 1,2,3 ], b : { b1 : 'x' }, c : 'test' }
   var expected = null;
-  var got = _.entityProbe({ src : src });
+  var got = _.entityProbe({ /*ttt*/src });
   test.identical( got.report, 'Probe : 3\n' );
 
   var src = [ [ 1,2,3 ], { b1 : 'x' }, 'test' ]
   var expected = null;
-  var got = _.entityProbe({ src : src });
+  var got = _.entityProbe({ /*ttt*/src });
   test.identical( got.report, 'Probe : 3\n' );
 
 }

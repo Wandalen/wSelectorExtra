@@ -171,7 +171,7 @@ entityProbeField.defaults.report = 1;
  * @example
  *
  * let src = { a : { b : 1 }, c : { d : 2 } };
- * let r = _.entityProbe({ src : src, recursive : 1 });
+ * let r = _.entityProbe({ /*ttt*/src, recursive : 1 });
  * console.log( r.report )
  * //Probe : 2
  * //*.b : 1 [ Array with 1 elements ]
@@ -215,7 +215,7 @@ function entityProbe( o )
       if( _.arrayIs( src[ s ] ) )
       entityProbe
       ({
-        src : src[ s ],
+        /*ttt*/src[ s ],
         result : o.result,
         allowingCollision : o.allowingCollision,
       });
