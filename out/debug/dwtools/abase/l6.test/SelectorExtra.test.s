@@ -43,7 +43,7 @@ function selectTrivial( test )
 var Self =
 {
 
-  name : 'Tools/base/l6/Selector',
+  name : 'Tools.base.l6.Selector',
   silencing : 1,
   enabled : 1,
 
