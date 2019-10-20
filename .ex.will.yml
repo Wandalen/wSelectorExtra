@@ -23,13 +23,16 @@ about :
 path :
 
   repository : git+https:///github.com/Wandalen/wSelectorExtra.git
+  remotes :
+   - git+https:///github.com/Wandalen/wSelectorExtra.git
+   - npm:///wselectorextra
   bugtracker : https:///github.com/Wandalen/wSelectorExtra/issues
 
 step :
 
   proto.export :
     inherit : module.export
-    export : path::proto
+    export : path::export
     tar : 0
     criterion :
       content : 'proto'
