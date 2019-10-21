@@ -23,7 +23,7 @@ about :
 path :
 
   repository : git+https:///github.com/Wandalen/wSelectorExtra.git
-  remotes :
+  origins :
    - git+https:///github.com/Wandalen/wSelectorExtra.git
    - npm:///wselectorextra
   bugtracker : https:///github.com/Wandalen/wSelectorExtra/issues
