@@ -128,7 +128,7 @@ function entityProbeField( o )
     {
       let element = o.all[ i ];
       let parent = o.parents[ i ];
-      if( !_.arrayHas( d.having, parent ) )
+      if( !_.longHas( d.having, parent ) )
       d.notHaving.push( parent );
     }
   }
@@ -236,7 +236,7 @@ function entityProbe( o )
     for( let r in o.result )
     {
       let field = o.result[ r ];
-      if( !_.arrayHas( field.having,map ) )
+      if( !_.longHas( field.having,map ) )
       field.notHaving.push( map );
     }
   }
