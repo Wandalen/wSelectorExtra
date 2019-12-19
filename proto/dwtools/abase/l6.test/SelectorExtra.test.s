@@ -21,7 +21,7 @@ var _ = _global_.wTools;
 // tests
 // --
 
-function selectTrivial( test )
+function entityProbe( test )
 {
 
   var src = { a : [ 1,2,3 ], b : { b1 : 'x' }, c : 'test' }
@@ -43,7 +43,7 @@ function selectTrivial( test )
 var Self =
 {
 
-  name : 'Tools.base.l6.Selector',
+  name : 'Tools.base.l6.SelectorExtra',
   silencing : 1,
   enabled : 1,
 
@@ -53,7 +53,7 @@ var Self =
 
   tests :
   {
-    selectTrivial,
+    entityProbe,
   }
 
 }
