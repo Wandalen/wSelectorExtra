@@ -6,7 +6,7 @@ Collection of routines to select a sub-structure from a complex data structure. 
 ## Try out
 ```
 npm install
-node sample/Sample.s
+node sample/Sample.js
 ```
 
 
