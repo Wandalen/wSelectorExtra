@@ -13,7 +13,7 @@
 
 /**
  *@summary Collection of routines to select a sub-structure from a complex data structure.
-  @namespace Tools( module::SelectorExtra )
+  @namespace Tools.SelectorExtra 
   @memberof module:Tools/base/SelectorExtra
 */
 
