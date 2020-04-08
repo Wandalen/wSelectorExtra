@@ -83,7 +83,8 @@ _entityProbeReport.defaults =
  * @param {Boolean} o.report=1 Supplements result with info about sub-structures.
  * @param {String} o.title Title of report string. By default uses value of `o.selector`.
  * @function entityProbeField
- * @memberofs "module:Tools/base/SelectorExtra","module:Tools/base/Fundamental.wTools"
+ * @namespace Tools
+ * @module Tools/base/SelectorExtra
 */
 
 function entityProbeField( o )
@@ -177,7 +178,8 @@ entityProbeField.defaults.report = 1;
  * //*.d : 1 [ Array with 1 elements ]
  *
  * @function entityProbe
- * @memberofs "module:Tools/base/SelectorExtra","module:Tools/base/Fundamental.wTools"
+ * @namespace Tools
+ * @module Tools/base/SelectorExtra
 */
 
 function entityProbe( o )
