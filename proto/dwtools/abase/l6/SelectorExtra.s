@@ -5,6 +5,7 @@
 /**
  * Collection of routines to select a sub-structure from a complex data structure. The module extends module Selector.
   @module Tools/base/SelectorExtra
+  @extends Tools
 */
 
 /**
@@ -12,9 +13,7 @@
  */
 
 /**
- *@summary Collection of routines to select a sub-structure from a complex data structure.
-  @namespace Tools.SelectorExtra 
-  @memberof module:Tools/base/SelectorExtra
+  Collection of routines to select a sub-structure from a complex data structure.
 */
 
 if( typeof module !== 'undefined' )
@@ -84,7 +83,8 @@ _entityProbeReport.defaults =
  * @param {Boolean} o.report=1 Supplements result with info about sub-structures.
  * @param {String} o.title Title of report string. By default uses value of `o.selector`.
  * @function entityProbeField
- * @memberof module:Tools/base/SelectorExtra.Tools( module::SelectorExtra )
+ * @namespace Tools
+ * @module Tools/base/SelectorExtra
 */
 
 function entityProbeField( o )
@@ -178,7 +178,8 @@ entityProbeField.defaults.report = 1;
  * //*.d : 1 [ Array with 1 elements ]
  *
  * @function entityProbe
- * @memberof module:Tools/base/SelectorExtra.Tools( module::SelectorExtra )
+ * @namespace Tools
+ * @module Tools/base/SelectorExtra
 */
 
 function entityProbe( o )
