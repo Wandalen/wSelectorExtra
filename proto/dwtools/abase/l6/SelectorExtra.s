@@ -161,7 +161,7 @@ entityProbeField.defaults.report = 1;
 /**
  * @summary Investigates sub-structures of source entity `o.src`.
  * @param {Object} o Options map
- * @param {} o.src=null Source entity
+ * @param {*} o.src=null Source entity
  * @param {Object} o.result=null Map with results of processing of each sub-strucrute.
  * @param {Boolean} o.recursive=0 Enables recursive walkthrough
  * @param {Boolean} o.report=1 Supplements result with info about sub-structures.
