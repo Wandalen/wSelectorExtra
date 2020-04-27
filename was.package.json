@@ -1,22 +1,22 @@
 {
-  "name" : "wselectorextra", 
-  "version" : "0.3.79", 
-  "description" : "Collection of routines to select a sub-structure from a complex data structure. The module extends module Selector.", 
-  "author" : "Kostiantyn Wandalen <wanalen@willbe.so>", 
-  "license" : "MIT", 
-  "main" : "proto/dwtools/abase/l6/SelectorExtra.s", 
-  "files" : [ "proto/dwtools/abase/l6", "proto/dwtools/Tools.s", "out" ], 
-  "scripts" : { "test" : "wtest .run proto/**", "docgen" : "wdocgen proto" }, 
-  "repository" : 
+  "name" : "wselectorextra",
+  "version" : "0.3.80",
+  "description" : "Collection of routines to select a sub-structure from a complex data structure. The module extends module Selector.",
+  "author" : "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "license" : "MIT",
+  "main" : "proto/dwtools/abase/l6/SelectorExtra.s",
+  "files" : [ "proto/dwtools/abase/l6", "proto/dwtools/Tools.s", "out" ],
+  "scripts" : { "test" : "wtest .run proto/**", "docgen" : "wdocgen proto" },
+  "repository" :
   {
-    "type" : "git", 
+    "type" : "git",
     "url" : "https://github.com/Wandalen/wSelectorExtra.git"
-  }, 
-  "bugs" : 
+  },
+  "bugs" :
   {
     "url" : "https://github.com/Wandalen/wSelectorExtra/issues"
-  }, 
-  "dependencies" : { "wTools" : "" }, 
-  "devDependencies" : { "wTesting" : "" }, 
+  },
+  "dependencies" : { "wTools" : "" },
+  "devDependencies" : { "wTesting" : "" },
   "keywords" : [ "wTools" ]
 }
