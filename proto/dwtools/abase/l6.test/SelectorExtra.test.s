@@ -27,12 +27,12 @@ function entityProbe( test )
   var src = { a : [ 1,2,3 ], b : { b1 : 'x' }, c : 'test' }
   var expected = null;
   var got = _.entityProbe({ src });
-  test.identical( got.report, 'Probe : 3\n' );
+  test.identical( got.log, 'Probe : 3\n' );
 
   var src = [ [ 1,2,3 ], { b1 : 'x' }, 'test' ]
   var expected = null;
   var got = _.entityProbe({ src });
-  test.identical( got.report, 'Probe : 3\n' );
+  test.identical( got.log, 'Probe : 3\n' );
 
 }
 

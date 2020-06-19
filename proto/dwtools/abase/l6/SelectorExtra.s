@@ -42,33 +42,33 @@ function _entityProbeReport( o )
   _.assert( _.objectIs( o.result ) );
   _.assert( arguments.length === 1 );
 
-  /* report */
+  /* log */
 
-  if( o.report )
+  if( o.log )
   {
-    if( !_.strIs( o.report ) )
-    o.report = '';
-    o.report += o.title + ' : ' + o.total + '\n';
+    if( !_.strIs( o.log ) )
+    o.log = '';
+    o.log += o.title + ' : ' + o.total + '\n';
     for( let r in o.result )
     {
       let d = o.result[ r ];
-      o.report += o.tab;
+      o.log += o.tab;
       if( o.prependingByAsterisk )
-      o.report += '*.';
-      o.report += r + ' : ' + d.having.length;
+      o.log += '*.';
+      o.log += r + ' : ' + d.having.length;
       if( d.values )
-      o.report += ' ' + _.toStrShort( d.values );
-      o.report += '\n';
+      o.log += ' ' + _.toStrShort( d.values );
+      o.log += '\n';
     }
   }
 
-  return o.report;
+  return o.log;
 }
 
 _entityProbeReport.defaults =
 {
   title : null,
-  report : null,
+  log : null,
   result : null,
   total : null,
   prependingByAsterisk : 1,
@@ -80,8 +80,8 @@ _entityProbeReport.defaults =
 /**
  * @summary Investigates sub-structures of source entity `o.src`.
  * @param {Object} o Options map. See {@link module:Tools/base/Selector.wTools(module:Selector).select select} for options details.
- * @param {Boolean} o.report=1 Supplements result with info about sub-structures.
- * @param {String} o.title Title of report string. By default uses value of `o.selector`.
+ * @param {Boolean} o.log=1 Supplements result with info about sub-structures.
+ * @param {String} o.title Title of log string. By default uses value of `o.selector`.
  * @function entityProbeField
  * @namespace Tools
  * @module Tools/base/SelectorExtra
@@ -135,14 +135,14 @@ function entityProbeField( o )
 
   /* */
 
-  if( o.report )
+  if( o.log )
   {
     if( o.title === null )
     o.title = o.selector;
-    o.report = _._entityProbeReport
+    o.log = _._entityProbeReport
     ({
       title : o.title,
-      report : o.report,
+      log : o.log,
       result : o.result,
       total : o.all.length,
       prependingByAsterisk : 0,
@@ -154,7 +154,7 @@ function entityProbeField( o )
 
 entityProbeField.defaults = Object.create( _.select.defaults );
 entityProbeField.defaults.title = null;
-entityProbeField.defaults.report = 1;
+entityProbeField.defaults.log = 1;
 
 //
 
@@ -164,15 +164,15 @@ entityProbeField.defaults.report = 1;
  * @param {*} o.src=null Source entity
  * @param {Object} o.result=null Map with results of processing of each sub-strucrute.
  * @param {Boolean} o.recursive=0 Enables recursive walkthrough
- * @param {Boolean} o.report=1 Supplements result with info about sub-structures.
+ * @param {Boolean} o.log=1 Supplements result with info about sub-structures.
  * @param {Number} o.total=0 Number of found sub-structures
  * @param {Array} o.all=null Array with found sub-structures
- * @param {String} o.title='Probe' Title of report string
+ * @param {String} o.title='Probe' Title of log string
  * @example
  *
  * let src = { a : { b : 1 }, c : { d : 2 } };
  * let r = _.entityProbe({ src, recursive : 1 });
- * console.log( r.report )
+ * console.log( r.log )
  * //Probe : 2
  * //*.b : 1 [ Array with 1 elements ]
  * //*.d : 1 [ Array with 1 elements ]
@@ -242,11 +242,11 @@ function entityProbe( o )
     }
   }
 
-  if( o.report )
-  o.report = _._entityProbeReport
+  if( o.log )
+  o.log = _._entityProbeReport
   ({
     title : o.title,
-    report : o.report,
+    log : o.log,
     result : o.result,
     total : o.total,
     prependingByAsterisk : 1,
@@ -289,7 +289,7 @@ entityProbe.defaults =
   src : null,
   result : null,
   recursive : 0,
-  report : 1,
+  log : 1,
   total : 0,
   all : null,
   title : 'Probe',
