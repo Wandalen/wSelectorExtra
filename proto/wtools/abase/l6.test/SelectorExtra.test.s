@@ -43,7 +43,7 @@ function entityProbe( test )
 let Self =
 {
 
-  name : 'Tools.base.l6.SelectorExtra',
+  name : 'Tools.l6.SelectorExtra',
   silencing : 1,
   enabled : 1,
 
