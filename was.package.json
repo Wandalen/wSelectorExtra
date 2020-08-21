@@ -1,6 +1,6 @@
 {
   "name" : "wselectorextra",
-  "version" : "0.3.106",
+  "version" : "0.3.107",
   "description" : "Collection of routines to select a sub-structure from a complex data structure. The module extends module Selector.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
