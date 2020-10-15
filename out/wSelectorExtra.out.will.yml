@@ -17,7 +17,7 @@ module:
       name: wSelectorExtra
       org: noorg
       description: >-
-        Collection of routines to select a sub-structure from a complex data
+        Collection of cross-platform routines to select a sub-structure from a complex data
         structure. The module extends module Selector.
       enabled: 1
       version: 0.4.0
@@ -804,7 +804,7 @@ module:
       name: wSelectorExtra
       org: noorg
       description: >-
-        Collection of routines to select a sub-structure from a complex data
+        Collection of cross-platform routines to select a sub-structure from a complex data
         structure. The module extends module Selector.
       enabled: 1
       version: 0.4.0

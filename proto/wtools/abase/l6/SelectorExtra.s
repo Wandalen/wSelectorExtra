@@ -3,7 +3,7 @@
 'use strict';
 
 /**
- * Collection of routines to select a sub-structure from a complex data structure. The module extends module Selector.
+ * Collection of cross-platform routines to select a sub-structure from a complex data structure. The module extends module Selector.
   @module Tools/base/SelectorExtra
   @extends Tools
 */
@@ -12,7 +12,7 @@
  *  */
 
 /**
-  Collection of routines to select a sub-structure from a complex data structure.
+  Collection of cross-platform routines to select a sub-structure from a complex data structure.
 */
 
 if( typeof module !== 'undefined' )

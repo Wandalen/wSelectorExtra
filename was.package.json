@@ -1,7 +1,7 @@
 {
   "name" : "wselectorextra",
   "version" : "0.3.109",
-  "description" : "Collection of routines to select a sub-structure from a complex data structure. The module extends module Selector.",
+  "description" : "Collection of cross-platform routines to select a sub-structure from a complex data structure. The module extends module Selector.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
   "main" : "proto/wtools/abase/l6/SelectorExtra.s",
