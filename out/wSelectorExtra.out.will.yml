@@ -1484,6 +1484,4 @@ module:
       ../.im.will.yml:
         hash: 41013c22df5baded2ce8fad052fd3a54
         size: 4948
-      wSelectorExtra.out.will.yml:
-        hash: 7e8396d54dbe71516dbc6249f2165bd4
-        size: 38060
+      wSelectorExtra.out.will.yml: *ref_0
