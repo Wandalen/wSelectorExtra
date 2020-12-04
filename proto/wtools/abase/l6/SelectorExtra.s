@@ -1,4 +1,5 @@
-( function _SelectorExtra_s_() {
+( function _SelectorExtra_s_()
+{
 
 'use strict';
 
@@ -37,7 +38,7 @@ _.assert( !!_realGlobal_ );
 function _entityProbeReport( o )
 {
 
-  o = _.routineOptions( _entityProbeReport,o );
+  o = _.routineOptions( _entityProbeReport, o );
   _.assert( _.objectIs( o.result ) );
   _.assert( arguments.length === 1 );
 
@@ -96,7 +97,7 @@ function entityProbeField( o )
     o.selector = arguments[ 1 ];
   }
 
-  _.routineOptions( entityProbeField,o );
+  _.routineOptions( entityProbeField, o );
 
   _.assert( arguments.length === 1 || arguments.length === 2 );
   o.all = _.select( _.mapOnly( o, _.select.defaults ) );
@@ -188,7 +189,7 @@ function entityProbe( o )
   o = { src : o }
 
   _.assert( arguments.length === 1, 'Expects single argument' );
-  _.routineOptions( entityProbe,o );
+  _.routineOptions( entityProbe, o );
   _.assert( _.arrayIs( o.src ) || _.objectIs( o.src ) );
 
   o.result = o.result || Object.create( null );
@@ -236,7 +237,7 @@ function entityProbe( o )
     for( let r in o.result )
     {
       let field = o.result[ r ];
-      if( !_.longHas( field.having,map ) )
+      if( !_.longHas( field.having, map ) )
       field.notHaving.push( map );
     }
   }
@@ -255,13 +256,13 @@ function entityProbe( o )
 
   /* */
 
-  function extend( result,src )
+  function extend( result, src )
   {
 
     o.all.push( src );
 
     if( !o.allowingCollision )
-    _.assertMapHasNone( result,src );
+    _.assertMapHasNone( result, src );
 
     for( let s in src )
     {
@@ -275,7 +276,7 @@ function entityProbe( o )
       }
       let r = result[ s ];
       r.times += 1;
-      let added = _.arrayAppendedOnce( r.values,src[ s ] ) !== -1;
+      let added = _.arrayAppendedOnce( r.values, src[ s ] ) !== -1;
       r.having.push( src );
     }
 
