@@ -1,4 +1,5 @@
-( function _SelectorExtra_test_s_() {
+( function _SelectorExtra_test_s_()
+{
 
 'use strict';
 
@@ -24,12 +25,12 @@ let _ = _global_.wTools;
 function entityProbe( test )
 {
 
-  var src = { a : [ 1,2,3 ], b : { b1 : 'x' }, c : 'test' }
+  var src = { a : [ 1, 2, 3 ], b : { b1 : 'x' }, c : 'test' }
   var expected = null;
   var got = _.entityProbe({ src });
   test.identical( got.log, 'Probe : 3\n' );
 
-  var src = [ [ 1,2,3 ], { b1 : 'x' }, 'test' ]
+  var src = [ [ 1, 2, 3 ], { b1 : 'x' }, 'test' ]
   var expected = null;
   var got = _.entityProbe({ src });
   test.identical( got.log, 'Probe : 3\n' );
