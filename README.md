@@ -8,7 +8,7 @@ Collection of cross-platform routines to select a sub-structure from a complex d
 git clone https://github.com/Wandalen/wSelectorExtra
 cd wSelectorExtra
 npm install
-node sample/Sample.s
+node sample/trivial/Sample.s
 ```
 
 ## To add to your project
