@@ -16,7 +16,7 @@
   {
     "url" : "https://github.com/Wandalen/wSelectorExtra/issues"
   },
-  "dependencies" : { "wTools" : "", "wselector" : "alpha" },
+  "dependencies" : { "wTools" : "", "wselector" : "" },
   "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0", "wselectorextra" : "file:." },
   "keywords" : [ "wTools" ]
 }
