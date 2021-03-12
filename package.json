@@ -1,6 +1,6 @@
 {
   "name": "wselectorextra",
-  "version": "0.3.150",
+  "version": "0.3.151",
   "description": "Collection of cross-platform routines to select a sub-structure from a complex data structure. The module extends module Selector.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
   "license": "MIT",
@@ -22,12 +22,12 @@
     "url": "https://github.com/Wandalen/wSelectorExtra/issues"
   },
   "dependencies": {
-    "wTools": "alpha",
-    "wselector": "alpha"
+    "wTools": "gamma",
+    "wselector": "gamma"
   },
   "devDependencies": {
     "eslint": "7.1.0",
-    "wTesting": "alpha",
+    "wTesting": "gamma",
     "wselectorextra": "file:."
   },
   "keywords": [
