@@ -25,9 +25,9 @@ if( typeof module !== 'undefined' )
 
 }
 
-let _global = _global_;
-let Self = _global_.wTools;
-let _ = _global_.wTools;
+const _global = _global_;
+const Self = _global_.wTools;
+const _ = _global_.wTools;
 
 _.assert( !!_realGlobal_ );
 
@@ -57,7 +57,7 @@ function _entityProbeReport( o )
       o.log += '*.';
       o.log += r + ' : ' + d.having.length;
       if( d.values )
-      o.log += ' ' + _.entity.exportStringShort( d.values );
+      o.log += ' ' + _.entity.exportStringShallow( d.values );
       o.log += '\n';
     }
   }
@@ -100,9 +100,9 @@ function entityProbeField( o )
   _.routineOptions( entityProbeField, o );
 
   _.assert( arguments.length === 1 || arguments.length === 2 );
-  o.all = _.select( _.mapOnly( o, _.select.defaults ) );
+  o.all = _.select( _.mapOnly_( null, o, _.select.defaults ) );
   o.onElement = function( it ){ return it.up };
-  o.parents = _.select( _.mapOnly( o, _.select.defaults ) );
+  o.parents = _.select( _.mapOnly_( null, o, _.select.defaults ) );
   o.result = Object.create( null );
 
   /* */
@@ -262,7 +262,7 @@ function entityProbe( o )
     o.all.push( src );
 
     if( !o.allowingCollision )
-    _.assertMapHasNone( result, src );
+    _.map.assertHasNone( result, src );
 
     for( let s in src )
     {

@@ -15,8 +15,8 @@ if( typeof module !== 'undefined' )
 
 }
 
-let _global = _global_;
-let _ = _global_.wTools;
+const _global = _global_;
+const _ = _global_.wTools;
 
 // --
 // tests
@@ -41,7 +41,7 @@ function entityProbe( test )
 // declare
 // --
 
-let Self =
+const Proto =
 {
 
   name : 'Tools.l6.SelectorExtra',
@@ -59,7 +59,7 @@ let Self =
 
 }
 
-Self = wTestSuite( Self );
+const Self = wTestSuite( Proto );
 if( typeof module !== 'undefined' && !module.parent )
 wTester.test( Self.name );
 
