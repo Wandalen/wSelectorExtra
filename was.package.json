@@ -5,7 +5,7 @@
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
   "main" : "proto/wtools/abase/l6/SelectorExtra.s",
-  "files" : [ "proto/wtools/abase/l6", "proto/wtools/Tools.s", "out" ],
+  "files" : [ "proto/wtools/abase/l6", "proto/wtools/Tools.s", "out", "proto/node_modules" ],
   "scripts" : { "test" : "wtest .run 'proto/**' rapidity:-3", "docgen" : "wdocgen proto" },
   "repository" :
   {
@@ -17,6 +17,6 @@
     "url" : "https://github.com/Wandalen/wSelectorExtra/issues"
   },
   "dependencies" : { "wTools" : "", "wselector" : "" },
-  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0", "wselectorextra" : "file:." },
+  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0" },
   "keywords" : [ "wTools" ]
 }
