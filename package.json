@@ -1,6 +1,6 @@
 {
   "name": "wselectorextra",
-  "version": "0.3.155",
+  "version": "0.3.156",
   "description": "Collection of cross-platform routines to select a sub-structure from a complex data structure. The module extends module Selector.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
   "license": "MIT",
@@ -8,7 +8,8 @@
   "files": [
     "proto/wtools/abase/l6",
     "proto/wtools/Tools.s",
-    "out"
+    "out",
+    "proto/node_modules"
   ],
   "scripts": {
     "test": "wtest .run 'proto/**' rapidity:-3",
@@ -27,8 +28,7 @@
   },
   "devDependencies": {
     "eslint": "7.1.0",
-    "wTesting": "delta",
-    "wselectorextra": "file:."
+    "wTesting": "delta"
   },
   "keywords": [
     "wTools"
