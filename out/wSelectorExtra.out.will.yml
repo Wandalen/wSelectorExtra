@@ -2,15 +2,12 @@ format: outwillfile-2.0
 root:
   - wSelectorExtra.out
 consistency:
-  wSelectorExtra.out.will.yml: &ref_0
-    hash: 3700eb31e4098dbf28361feb21b2cb65
-    size: 38912
-  ../.ex.will.yml: &ref_1
+  ../.ex.will.yml: &ref_0
     hash: f78cd1f7311292075c870bd6119245c6
     size: 1812
-  ../.im.will.yml: &ref_2
-    hash: 38ec704cdcd75387a94f5743d3cfb929
-    size: 5106
+  ../.im.will.yml: &ref_1
+    hash: f9d81e3538a0127065730f84e9759ded
+    size: 5052
 module:
   wSelectorExtra.out:
     about:
@@ -21,18 +18,18 @@ module:
         complex data structure. The module extends module Selector.
       enabled: 1
       version: 0.4.0
-      interpreters:
+      interpreters: &ref_2
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
+      keywords: &ref_3
         - wTools
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: wselectorextra
-      npm.scripts:
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -707,24 +704,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          filePath: 'reflector::exported.proto.export'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          filePath: 'reflector::exported.files.proto.export'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -813,9 +792,8 @@ module:
           content: proto
           export: 1
     consistency:
-      wSelectorExtra.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
       name: wSelectorExtra
@@ -825,20 +803,13 @@ module:
         complex data structure. The module extends module Selector.
       enabled: 1
       version: 0.4.0
-      interpreters:
-        - njs >= 10.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - wTools
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@01.school>
+      contributors: *ref_4
       npm.name: wselectorextra
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -1514,8 +1485,5 @@ module:
         hash: f78cd1f7311292075c870bd6119245c6
         size: 1812
       ../.im.will.yml:
-        hash: 38ec704cdcd75387a94f5743d3cfb929
-        size: 5106
-      wSelectorExtra.out.will.yml:
-        hash: 3700eb31e4098dbf28361feb21b2cb65
-        size: 38912
+        hash: f9d81e3538a0127065730f84e9759ded
+        size: 5052
