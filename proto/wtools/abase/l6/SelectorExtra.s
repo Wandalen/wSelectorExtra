@@ -38,7 +38,7 @@ _.assert( !!_realGlobal_ );
 function _entityProbeReport( o )
 {
 
-  o = _.routineOptions( _entityProbeReport, o );
+  o = _.routine.options_( _entityProbeReport, o );
   _.assert( _.objectIs( o.result ) );
   _.assert( arguments.length === 1 );
 
@@ -97,7 +97,7 @@ function entityProbeField( o )
     o.selector = arguments[ 1 ];
   }
 
-  _.routineOptions( entityProbeField, o );
+  _.routine.options_( entityProbeField, o );
 
   _.assert( arguments.length === 1 || arguments.length === 2 );
   o.all = _.select( _.mapOnly_( null, o, _.select.defaults ) );
@@ -189,7 +189,7 @@ function entityProbe( o )
   o = { src : o }
 
   _.assert( arguments.length === 1, 'Expects single argument' );
-  _.routineOptions( entityProbe, o );
+  _.routine.options_( entityProbe, o );
   _.assert( _.arrayIs( o.src ) || _.objectIs( o.src ) );
 
   o.result = o.result || Object.create( null );
@@ -308,7 +308,7 @@ let Proto =
 
 }
 
-_.mapSupplement( Self, Proto );
+_.props.supplement( Self, Proto );
 
 // --
 // export
