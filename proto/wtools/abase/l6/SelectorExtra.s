@@ -39,7 +39,7 @@ function _entityProbeReport( o )
 {
 
   o = _.routine.options_( _entityProbeReport, o );
-  _.assert( _.objectIs( o.result ) );
+  _.assert( _.object.isBasic( o.result ) );
   _.assert( arguments.length === 1 );
 
   /* log */
@@ -190,7 +190,7 @@ function entityProbe( o )
 
   _.assert( arguments.length === 1, 'Expects single argument' );
   _.routine.options_( entityProbe, o );
-  _.assert( _.arrayIs( o.src ) || _.objectIs( o.src ) );
+  _.assert( _.arrayIs( o.src ) || _.object.isBasic( o.src ) );
 
   o.result = o.result || Object.create( null );
   o.all = o.all || [];
@@ -205,7 +205,7 @@ function entityProbe( o )
     // if( !_.longIs( src ) || !o.recursive )
     if( !_.longIs( src ) && o.recursive )
     {
-      _.assert( _.objectIs( src ) );
+      _.assert( _.object.isBasic( src ) );
       if( src !== undefined )
       extend( o.result, src );
       return src;
@@ -220,7 +220,7 @@ function entityProbe( o )
         result : o.result,
         allowingCollision : o.allowingCollision,
       });
-      else if( _.objectIs( src[ s ] ) )
+      else if( _.object.isBasic( src[ s ] ) )
       extend( o.result, src );
       // else
       // throw _.err( 'Array should have only maps' );
