@@ -57,7 +57,7 @@ function _entityProbeReport( o )
       o.log += '*.';
       o.log += r + ' : ' + d.having.length;
       if( d.values )
-      o.log += ' ' + _.entity.exportStringShallow( d.values );
+      o.log += ' ' + _.entity.exportStringDiagnosticShallow( d.values );
       o.log += '\n';
     }
   }
