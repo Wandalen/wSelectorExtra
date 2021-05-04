@@ -197,7 +197,7 @@ function entityProbe( o )
 
   /* */
 
-  _.map_( null, o.src, function( src, k )
+  _.container.map_( null, o.src, function( src, k )
   {
 
     o.total += 1;
