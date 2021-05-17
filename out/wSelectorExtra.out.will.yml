@@ -2,12 +2,9 @@ format: outwillfile-2.0
 root:
   - wSelectorExtra.out
 consistency:
-  ../.ex.will.yml: &ref_0
-    hash: f78cd1f7311292075c870bd6119245c6
-    size: 1812
-  ../.im.will.yml: &ref_1
-    hash: f9d81e3538a0127065730f84e9759ded
-    size: 5052
+  ../will.yml: &ref_0
+    hash: 6875fa593bbcf9795f70602669681e08
+    size: 6628
 module:
   wSelectorExtra.out:
     about:
@@ -18,18 +15,18 @@ module:
         complex data structure. The module extends module Selector.
       enabled: 1
       version: 0.4.0
-      interpreters: &ref_2
+      license: MIT
+      npm.name: wselectorextra
+      author: Kostiantyn Wandalen <wanalen@01.school>
+      keywords: &ref_1
+        - wTools
+      contributors: &ref_2
+        - Kostiantyn Wandalen <wanalen@01.school>
+      interpreters: &ref_3
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords: &ref_3
-        - wTools
-      license: MIT
-      author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: &ref_4
-        - Kostiantyn Wandalen <wanalen@01.school>
-      npm.name: wselectorextra
-      npm.scripts: &ref_5
+      npm.scripts: &ref_4
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -44,15 +41,11 @@ module:
       module.original.willfiles:
         criterion:
           predefined: 1
-        path:
-          - ../.ex.will.yml
-          - ../.im.will.yml
+        path: ../will.yml
       module.peer.willfiles:
         criterion:
           predefined: 1
-        path:
-          - ../.ex.will.yml
-          - ../.im.will.yml
+        path: ../will.yml
       module.peer.in:
         criterion:
           predefined: 1
@@ -792,8 +785,7 @@ module:
           content: proto
           export: 1
     consistency:
-      ../.ex.will.yml: *ref_0
-      ../.im.will.yml: *ref_1
+      ../will.yml: *ref_0
   ../:
     about:
       name: wSelectorExtra
@@ -803,26 +795,22 @@ module:
         complex data structure. The module extends module Selector.
       enabled: 1
       version: 0.4.0
-      interpreters: *ref_2
-      keywords: *ref_3
       license: MIT
-      author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: *ref_4
       npm.name: wselectorextra
-      npm.scripts: *ref_5
+      author: Kostiantyn Wandalen <wanalen@01.school>
+      keywords: *ref_1
+      contributors: *ref_2
+      interpreters: *ref_3
+      npm.scripts: *ref_4
     path:
       module.willfiles:
         criterion:
           predefined: 1
-        path:
-          - .ex.will.yml
-          - .im.will.yml
+        path: will.yml
       module.original.willfiles:
         criterion:
           predefined: 1
-        path:
-          - .ex.will.yml
-          - .im.will.yml
+        path: will.yml
       module.peer.willfiles:
         criterion:
           predefined: 1
@@ -1481,9 +1469,6 @@ module:
           - 'build::release'
           - 'build::npm'
     consistency:
-      ../.ex.will.yml:
-        hash: f78cd1f7311292075c870bd6119245c6
-        size: 1812
-      ../.im.will.yml:
-        hash: f9d81e3538a0127065730f84e9759ded
-        size: 5052
+      ../will.yml:
+        hash: 6875fa593bbcf9795f70602669681e08
+        size: 6628
