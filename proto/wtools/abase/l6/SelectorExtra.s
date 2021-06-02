@@ -26,7 +26,6 @@ if( typeof module !== 'undefined' )
 }
 
 const _global = _global_;
-const Self = _global_.wTools;
 const _ = _global_.wTools;
 
 _.assert( !!_realGlobal_ );
@@ -308,13 +307,13 @@ let Proto =
 
 }
 
-_.props.supplement( Self, Proto );
+_.props.supplement( _, Proto );
 
 // --
 // export
 // --
 
 if( typeof module !== 'undefined' )
-module[ 'exports' ] = Self;
+module[ 'exports' ] = _;
 
 })();
