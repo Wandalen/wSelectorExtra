@@ -1,22 +1,37 @@
 {
-  "name" : "wselectorextra",
-  "version" : "0.3.176",
-  "description" : "Collection of cross-platform routines to select a sub-structure from a complex data structure. The module extends module Selector.",
-  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
-  "license" : "MIT",
-  "main" : "proto/node_modules/wselectorextra",
-  "files" : [ "proto/wtools/abase/l6", "out", "proto/node_modules", "proto/node_modules/Tools", "proto/node_modules/wselectorextra" ],
-  "scripts" : { "test" : "wtest .run 'proto/**' rapidity:-3", "docgen" : "wdocgen proto" },
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/Wandalen/wSelectorExtra.git"
+  "name": "wselectorextra",
+  "version": "0.3.177",
+  "description": "Collection of cross-platform routines to select a sub-structure from a complex data structure. The module extends module Selector.",
+  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "license": "MIT",
+  "main": "proto/node_modules/wselectorextra",
+  "files": [
+    "proto/wtools/abase/l6",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wselectorextra"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
   },
-  "bugs" :
-  {
-    "url" : "https://github.com/Wandalen/wSelectorExtra/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wSelectorExtra.git"
   },
-  "dependencies" : { "wTools" : "", "wselector" : "" },
-  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0" },
-  "keywords" : [ "wTools" ]
+  "bugs": {
+    "url": "https://github.com/Wandalen/wSelectorExtra/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wselector": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.1.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
 }
