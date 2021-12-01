@@ -2,7 +2,7 @@
   "name": "wselectorextra",
   "version": "0.3.203",
   "description": "Collection of cross-platform routines to select a sub-structure from a complex data structure. The module extends module Selector.",
-  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
   "license": "MIT",
   "main": "proto/node_modules/wselectorextra",
   "files": [
