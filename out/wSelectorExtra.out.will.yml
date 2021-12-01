@@ -3,8 +3,8 @@ root:
   - wSelectorExtra.out
 consistency:
   ../will.yml: &ref_0
-    hash: 701a77425d1e3045e8ece4d9c1313dce
-    size: 6487
+    hash: 637f015a03b56cc833bddca11fea6b4a
+    size: 6495
 module:
   wSelectorExtra.out:
     about:
@@ -1452,5 +1452,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 701a77425d1e3045e8ece4d9c1313dce
-        size: 6487
+        hash: 637f015a03b56cc833bddca11fea6b4a
+        size: 6495
